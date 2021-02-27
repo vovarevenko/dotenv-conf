@@ -1,5 +1,14 @@
 # dotenv-conf
 
+[![npm version](https://img.shields.io/npm/v/dotenv-conf)](https://npmjs.com/package/dotenv-conf)
+[![npm weekly downloads](https://img.shields.io/npm/dw/dotenv-conf)](https://npmjs.com/package/dotenv-conf)
+[![install size](https://packagephobia.com/badge?p=dotenv-conf)](https://packagephobia.com/result?p=dotenv-conf)
+[![dotenv version](https://img.shields.io/github/package-json/dependency-version/vovarevenko/dotenv-conf/dotenv)](https://npmjs.com/package/dotenv)
+
+Loads environment variables from `.env` file to object.
+
+This is [dotenv](https://npmjs.com/package/dotenv) package wrapper with TypeScript support!
+
 ## Installation
 
 Install with [yarn](https://yarnpkg.com):

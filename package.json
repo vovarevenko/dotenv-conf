@@ -1,6 +1,6 @@
 {
   "name": "dotenv-conf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Loads environment variables from .env file to object",
   "homepage": "https://github.com/vovarevenko/dotenv-conf#readme",
   "author": "Vova Revenko <vova@revenko.org> (https://revenko.org)",

@@ -57,6 +57,9 @@ export const redis = {
   host: data.REDIS_HOST || '127.0.0.1',
   port: parseInt(data.REDIS_PORT) || 6379,
 }
+
+// If you need:
+process.env.ENV = env
 ```
 
 Use `config` module in any file of your project:
@@ -69,6 +72,8 @@ console.log(isDev) // boolean: true
 
 console.log(http.host) // string: 127.0.0.1
 console.log(http.port) // number: 8080
+
+console.log(process.env.ENV) // string: development
 ```
 
 ```typescript

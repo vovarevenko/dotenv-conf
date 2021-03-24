@@ -5,7 +5,7 @@
 [![install size](https://packagephobia.com/badge?p=dotenv-conf)](https://packagephobia.com/result?p=dotenv-conf)
 [![dotenv version](https://img.shields.io/github/package-json/dependency-version/vovarevenko/dotenv-conf/dotenv)](https://npmjs.com/package/dotenv)
 
-Loads environment variables from `.env` file to object.
+Loads environment variables from `.env` file to object. Any variables in `process.env` will overwrite your variables in `.env` file.
 
 This is [dotenv](https://npmjs.com/package/dotenv) package wrapper with TypeScript support!
 
@@ -57,9 +57,6 @@ export const redis = {
   host: data.REDIS_HOST || '127.0.0.1',
   port: parseInt(data.REDIS_PORT) || 6379,
 }
-
-// If you need:
-process.env.ENV = env
 ```
 
 Use `config` module in any file of your project:
@@ -72,8 +69,6 @@ console.log(isDev) // boolean: true
 
 console.log(http.host) // string: 127.0.0.1
 console.log(http.port) // number: 8080
-
-console.log(process.env.ENV) // string: development
 ```
 
 ```typescript
